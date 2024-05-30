@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="/" method="post" name="login" > 
+        <fieldset>
+<input type="text" name="username" placeholder="Username" minlength="5" maxlength="25" required >
+<input type="text" name="password" placeholder="Password" minlength="8" maxlength="15" required >
+<input type="submit" name="login" value="login">
+    </fieldset>
+    </form>
+  <form action="" method="post" name="register" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>
+            User registration
+        </legend>
+        <label >username</label>
+        <input type="text" name="username" required>
+        <br>
+        <label >password</label>
+        <input type="password" name="password" required>
+        <br>
+        <label >email</label>
+        <input type="email" name="email" required>
+        <br>
+        
+        <label >Gender</label>
+        <input type="radio" name="Gender" value="male" required>male
+        <input type="radio" name="Gender" value="female" required>female
+        <input type="radio" name="Gender" value="other" required>other
+        <br>
+        <label>DOB</label>
+        <input type="date" name="dob">
+        <br>
+
+        <label>district</label>
+        <select name="district" size='1'>
+            <option value="Kathmandu">Kathmandu</option>
+            <option value="Lalitpur">lalitpur</option>
+            <option value="Dhangadi">Dhangadi</option>
+            <option value="Jhapa">Jhapa</option>
+            <option value="Others">Others</option>
+        </select>
+        <br>
+        <label>Course</label>
+        <input type="checkbox" name="course[]" value="php">php
+        <input type="checkbox" name="course[]" value="java">java
+        <input type="checkbox" name="course[]" value="asp" checked>Asp
+        <br>
+        <label>Photo</label>
+        <input type="file" name="Photo">
+        <br>
+        <label >Message</label>
+        <textarea name="Message" rows="8" cols="50"></textarea>
+        <br>
+        <input type="submit" name="register" value="register">
+        <input type="reset" name="cancel" value="cancel">
+    </fieldset>
+  </form>
+</body>
+</html>
